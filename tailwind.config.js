@@ -4,10 +4,8 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    screens: {
-      mobile: "375px",
-      tablet: "768px",
-      desktop: "1440px",
+    extend: {
+      Jakarta: "Plus Jakarta Sans",
     },
     colors: {
       white: "hsl(0, 0%, 100%)",
@@ -17,10 +15,17 @@ module.exports = {
       "yankee-blue": "hsl(233, 54%, 16%)",
       "roman-silver": "hsl(232, 10%, 56%)",
       "sasquatch-socks": "hsl(341, 92%, 62%)",
-      "carnation-pink": "hsl(341°, 100%, 83%)",
+      "carnation-pink": "#F74780",
       "ultramarine-blue": "hsl(237, 100%, 64%)",
     },
-    extend: {},
+    extend: {
+      body: ["Plus Jakarta Sans"],
+      backgroundImage: {
+        "sm-screen": "url('../public/img/image-hero-mobile.webp')",
+        "md-screen": "url('../public/img/image-hero-tablet.webp')",
+        "lg-screen": "url('../public/img/image-hero-desktop.webp')",
+      },
+    },
   },
   plugins: [],
 };

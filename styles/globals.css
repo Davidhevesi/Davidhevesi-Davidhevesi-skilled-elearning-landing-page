@@ -1,29 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @tailwind base;
 @tailwind components;
-@tailwind utilities;s
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+.intro {
+  background-image: url("../public/img/image-hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 435px 409px;
+  height: 386px;
+  width: 100%;
+  margin: auto;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (min-width: 768px) {
+  .hero {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 70vh;
+    background-image: url(../public/img/image-hero-tablet.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
   }
-  body {
-    color: white;
-    background: black;
+  .intro {
+    display: none;
   }
 }
+@media (min-width: 1024px) {
+  .hero {
+    height: 84vh;
+    width: 50%;
+    background-image: url(../public/img/image-hero-desktop.png);
+    background-position: 180px -190px;
+    background-size: auto 120%;
+  }}
+
+
+
+
