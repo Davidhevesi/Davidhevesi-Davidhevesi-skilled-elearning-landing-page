@@ -47,7 +47,10 @@ export default function Feature() {
         </p>
       </div>
       {features.map((feature) => (
-        <div className="flex flex-col bg-white shadow-2xl rounded-xl lg:px-6 lg:py-6">
+        <div
+          key={feature}
+          className="flex flex-col bg-white shadow-2xl rounded-xl lg:px-6 lg:py-6"
+        >
           <div className="-mt-8 px-4 py-2 md:-mt-10 lg:-mt-14">
             <Image src={feature.icon} />
           </div>
