@@ -7,30 +7,35 @@ import photoIcon from "../public/img/icon-photography.svg";
 import animationIcon from "../public/img/icon-animation.svg";
 const features = [
   {
+    id: 1,
     title: "Animation",
     description:
       "Learn the latest animation techniques to create stunning motion design and captivate your audience and learn new ways to do things.",
     icon: animationIcon,
   },
   {
+    id: 2,
     title: "Design",
     description:
       "Create beautiful, usable interfaces to help shape the future of how the web looks amazing on a flat screen tv and ese. ",
     icon: designIcon,
   },
   {
+    id: 3,
     title: "Photography",
     description:
       "Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos and all the other effects.",
     icon: photoIcon,
   },
   {
+    id: 4,
     title: "Crypto",
     description:
       "All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course and up your skills to be job ready.",
     icon: cryptoIcon,
   },
   {
+    id: 5,
     title: "Business",
     description:
       "A step-by-step playbook to help you start, scale, and sustain your business without outside investment or other help from external sources.",
@@ -47,18 +52,20 @@ export default function Feature() {
         </p>
       </div>
       {features.map((feature) => (
-        <div
-          key={feature}
-          className="flex flex-col bg-white shadow-2xl rounded-xl lg:px-6 lg:py-6"
-        >
+        <div className="flex flex-col bg-white shadow-2xl rounded-xl lg:px-6 lg:py-6">
           <div className="-mt-8 px-4 py-2 md:-mt-10 lg:-mt-14">
-            <Image src={feature.icon} />
+            <Image key={feature.id} src={feature.icon} />
           </div>
           <div className="px-4 py-4 md:px-6 ">
-            <h3 className="mb-4 font-bold text-xl md:py-4 lg:pb-6">
+            <h3
+              key={feature.id}
+              className="mb-4 font-bold text-xl md:py-4 lg:pb-6"
+            >
               {feature.title}
             </h3>
-            <p className="text-roman-silver">{feature.description}</p>
+            <p key={feature.id} className="text-roman-silver">
+              {feature.description}
+            </p>
           </div>
           <div>
             <button className="mb-4 pl-4 text-carnation-pink text-lg font-semibold lg:pl-6 lg:mb-6 md:mb-8 md:pl-6">
