@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="py-12">
+    <section className="">
       <div className="hero"></div>
-      <main className="lg:relative pt-20 md:mb-18 lg:mb-0 lg:pt-0">
+      <main className="lg:relative pt-20  md:mb-18 lg:mb-0 lg:pt-0">
         <div className="mx-auto w-full text-center lg:py-36 md:text-left lg:text-left lg:max-w-screen-xl">
           <div className="px-4 md:w-7/12 lg:pt-0 lg:w-1/2 ">
             <h1 className="text-5xl text-left tracking-tight font-extrabold text-gray-900  md:text-6xl lg:text-2xl">
