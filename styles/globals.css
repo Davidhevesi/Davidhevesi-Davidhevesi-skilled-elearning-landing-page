@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .intro {
-  background-image: url("/images/image-hero-mobile.png");
+  background-image: url("/images/image-hero-mobile.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 435px 409px;
@@ -19,7 +19,7 @@
     right: 0;
     width: 45%;
     height: 70vh;
-    background-image: url("/images/image-hero-mobile.png");
+    background-image: url("/images/image-hero-tablet.webp");
     background-repeat: no-repeat;
     background-position: bottom left;
   }
@@ -31,7 +31,7 @@
   .hero {
     height: 84vh;
     width: 50%;
-    background-image: url("/images/image-hero-desktop.png");
+    background-image: url("/images/image-hero-desktop.webp");
     background-position: 180px -190px;
     background-size: auto 120%;
   }}
