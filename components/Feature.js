@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import designIcon from "../public/img/icon-design.svg";
-import cryptoIcon from "../public/img/icon-crypto.svg";
-import businessIcon from "../public/img/icon-business.svg";
-import photoIcon from "../public/img/icon-photography.svg";
-import animationIcon from "../public/img/icon-animation.svg";
+import designIcon from "../components/images/icon-design.svg";
+import cryptoIcon from "../components/images/icon-crypto.svg";
+import businessIcon from "../components/images/icon-business.svg";
+import photoIcon from "../components/images/icon-photography.svg";
+import animationIcon from "../components/images/icon-animation.svg";
 const features = [
   {
     id: 1,
